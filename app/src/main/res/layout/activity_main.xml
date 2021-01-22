@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEST"
+        android:textSize="50sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1"/>
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/txt1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.05"/>
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:src="@drawable/choice"
+        app:layout_constraintTop_toBottomOf="@id/btnSave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.05"/>
+    <TextView
+        android:id="@+id/txtHtml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imgProfile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        android:text="HTML Code"
+        android:textSize="30sp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/txtHelloV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txtHtml"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Hello World\in parent\nhghgdh\njgfg\njdddddddd\nhsggsh\nkskjhsj\n
+        shgdfh\njsdhjkhj\nhsdgfff\nhsgdf\nkjssss"
+        app:layout_constraintVertical_bias="0.1"
+
+        android:textSize="30sp"
+        android:gravity="center"/>
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="400sp"
+        app:layout_constraintTop_toBottomOf="@id/txtHelloV"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
